@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resizext</title>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="style.css" media="all">
+        <script src="./lib/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="jquery.resizext.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="content">
+            <h1><span>Resizext demo page :</span></h1>
+            <nav>
+                <button type="button" class="increaseButton"><span>Increase font</span></button>
+                <button type="button" class="decreaseButton"><span>Decrease font</span></button>
+            </nav>
+            <section>
+                <article class="resizableText">
+                    <p>
+                        <h2>Resizable section</h2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius pharetra nisl, sed volutpat urna faucibus placerat. Cras sit amet dolor nisi. Sed sed mi mollis, venenatis risus vehicula, bibendum metus. Maecenas sit amet porttitor mauris. Nam a lorem ac justo feugiat fringilla ut ac erat. Donec gravida, tortor at eleifend ornare, sapien felis iaculis felis, aliquet tristique lectus enim eu enim. Donec eleifend a mauris eget tincidunt. Quisque volutpat malesuada lacinia.
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        <h2>Not resizable section</h2>
+                        Mauris urna purus, tempus non nibh vitae, accumsan mollis nibh. Integer mollis non nisi id posuere. Praesent ac purus non tortor iaculis eleifend ac non dolor. Suspendisse potenti. Pellentesque a justo eu felis egestas vulputate ut vel diam. Sed feugiat fermentum purus, vel egestas enim cursus non. Nulla facilisi. Cras eget lorem consequat, pharetra augue id, pretium metus. Cras quis justo nisi. Duis mauris nisi, dapibus egestas eros id, laoreet hendrerit justo. Aenean venenatis diam nunc, sit amet volutpat ante malesuada sed. Nam eget auctor nisl, non luctus est. Cras id est at dolor posuere vulputate vel sit amet tellus. Duis facilisis, velit a malesuada euismod, justo risus fringilla erat, non imperdiet dui mauris consectetur ligula.
+                    </p>
+                </article>
+            </section>
+            <section>
+                <article class="resizableText">
+                    <p>
+                        <h2>Resizable section</h2>
+                        Proin eu eros malesuada, sagittis elit sed, convallis leo. Praesent id euismod neque. Donec id lorem velit. Curabitur rutrum volutpat tincidunt. Nulla sollicitudin nibh vitae mauris facilisis, ac eleifend nisi aliquet. Donec a porttitor lectus, ac aliquam dolor. In hac habitasse platea dictumst. Quisque et urna vitae dolor mattis varius.
+                    </p>
+                </article>
+                <article class="resizableText">
+                    <p>
+                        <h2>Resizable section</h2>
+                        Donec convallis quam tincidunt enim iaculis iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam non iaculis augue, sit amet fermentum lectus. Pellentesque luctus vehicula augue, eu egestas purus tempus eu. Nunc mattis rutrum rhoncus. Proin elit turpis, commodo hendrerit ante vitae, aliquet consequat quam. Duis mattis odio nunc, tempus lacinia nunc varius at. In consequat orci dapibus ante pellentesque viverra. Nullam a nibh a diam varius interdum in in lacus. Morbi viverra, arcu eget iaculis auctor, erat magna gravida sem, fermentum pharetra mauris neque id massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et mauris non massa pulvinar lacinia.
+                    </p>
+                </article>
+            </section>
+        </div>
+
+        <script type="text/javascript">
+            (function($) {
+
+                $(function() {
+                    $('.resizableText').resizext({
+                        increaseButton: $('.increaseButton'),
+                        decreaseButton: $('.decreaseButton'),
+                        animate: true,
+                        duration: 3
+                    });
+                });
+
+            }(jQuery));
+        </script>
+    </body>
+</html>

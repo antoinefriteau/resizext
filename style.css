@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    clear: none;
+}
+
+p {
+    padding: 12px 2px;
+}
+
+button {
+    display: inline-block;
+    width: 60px;
+    height: 42px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #DC3C00;
+    cursor: pointer;
+    text-align: center;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+button:hover {
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -o-transition: all linear .4s;
+    transition: all linear .4s;
+    background-color: #fff;
+    color: black;
+}
+button:active {
+    background-color: #dedede;
+}
+
+body {
+    background-color: #fefefe;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    line-height: 150%;
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    -ms-font-smoothing:antialiased;
+    -o-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+}
+
+.content {
+    margin: 0 auto;
+    width: 800px;
+}
+
+h1 {
+    font-size: 220%;
+    line-height: 120%;
+    margin: 20px 0px;
+}
+
+h1 span {
+    padding: 6px 10px;
+    background-color: #1570a6;
+    color: white;
+}
+
+button.increaseButton span, button.decreaseButton span{
+    display: none;
+}
+
+button.increaseButton {
+    font-size: 110%;
+}
+button.increaseButton:hover {
+    font-size: 130%;
+}
+button.increaseButton:before {
+    content: "A";
+}
+button.increaseButton:after {
+    content: "+";
+    vertical-align: top;
+    font-size: 80%;
+}
+
+button.decreaseButton {
+    font-size: 110%;
+}
+button.decreaseButton:hover {
+    font-size: 90%;
+}
+button.decreaseButton:before {
+    content: "A";
+}
+button.decreaseButton:after {
+    content: "-";
+    vertical-align: top;
+    font-size: 80%;
+}
