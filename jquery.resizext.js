@@ -20,10 +20,10 @@
         resizableElements = this;
 
         if(opts.animate) {
-            $(resizableElements).css('-webkit-transition', 'all linear .' + opts.duration + 's');
-            $(resizableElements).css('-moz-transition', 'all linear .' + opts.duration + 's');
-            $(resizableElements).css('-o-transition', 'all linear .' + opts.duration + 's');
-            $(resizableElements).css('transition', 'all linear .' + opts.duration + 's');
+            $(resizableElements).css('-webkit-transition', 'font-size linear .' + opts.duration + 's');
+            $(resizableElements).css('-moz-transition', 'font-size linear .' + opts.duration + 's');
+            $(resizableElements).css('-o-transition', 'font-size linear .' + opts.duration + 's');
+            $(resizableElements).css('transition', 'font-size linear .' + opts.duration + 's');
         }
 
         // TODO : check the increase and decrease button validity
